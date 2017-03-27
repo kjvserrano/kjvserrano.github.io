@@ -1,0 +1,45 @@
+@background-color:  #3F51B5;
+@background-color-dark:#303F9F;
+.kj-ribbon {
+    background-color: @background-color-dark;
+    margin: auto;
+    h2 {
+        text-align: center;
+    }
+    img {
+        height: 250px;
+        width: 250px;
+        display: block;
+        margin: auto;
+
+    }
+}
+
+.kj-section {
+    max-width: 800px;
+    margin: auto;
+    word-wrap: break-word;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.kj-section-content {
+    max-width: 400px;
+    margin: auto;
+}
+
+.ice-bear {
+    &:extend(.kj-section-content);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;   
+    background-image: url("./ice_bear_laptop.jpg");
+}
+
+.food {
+    &:extend(.kj-section-content);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;   
+    background-image: url("./wagyu.jpg");
+}

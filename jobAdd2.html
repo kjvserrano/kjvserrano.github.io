@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://chat-ef347.firebaseapp.com/static/css/app.css">
+  <script 	defer src="https://chat-ef347.firebaseapp.com/applicantChat.js"></script> 
+  <script>
+    setTimeout(() => {
+      window.applicantApp.initialize({
+        applicant: {
+          id: "applicant1",
+          name: "Karlo Jose Serrano"
+        },
+        jobAdd: {
+          id: "jobAdd2",
+          name: "Business Analyst"
+        },
+        company: {
+          id: "company1",
+          name: "Hardcore Solutions Inc"
+        }
+      })
+    }, 2000)
+  </script>
+	
+</head>
+<body>
+<div id="applicantApp"></div></body>
+</html>
